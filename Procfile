@@ -1,0 +1,1 @@
+web: whatbot -c conf/whatbot.conf
