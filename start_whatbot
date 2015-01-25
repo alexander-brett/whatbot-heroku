@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if ! [ -z "$WHATBOT_CONFIG" ]; then
+    echo 'Writing conf file to conf/whatbot.conf'
+    echo $WHATBOT_CONFIG > conf/whatbot.conf
+fi
+
+if ! [ -e conf/whatbot.conf ]; then
+    echo 'NO CONFIG DATA'
+    exit 1
+fi
+
+perl -Ilocal/lib/perl5/ local/bin/whatbot -c conf/whatbot.conf
