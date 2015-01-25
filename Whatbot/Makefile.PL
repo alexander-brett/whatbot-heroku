@@ -40,6 +40,7 @@ requires       'Module::Pluggable'                   => 3.9;
 requires       'Mojo::DOM'                           => 0;
 requires       'Moose'                               => 2.04;
 requires       'MooseX::Declare'                     => 0.39;
+requires       'MooseX::Declare::Context::WithOptions'=> 0.39;
 requires       'MooseX::DeclareX::Plugin::singleton' => 0.002;
 requires       'MooseX::Singleton'                   => 0.29;
 requires       'Number::Format'                      => 0;
